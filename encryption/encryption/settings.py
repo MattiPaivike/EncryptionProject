@@ -33,7 +33,6 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'encrypt.apps.EncryptConfig',
     'users.apps.UsersConfig',
-    'crispy_forms',
     'rest_framework',
     'rest_framework.authtoken',
     'django.contrib.admin',
@@ -124,12 +123,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
-#template pack for login/logout/register pages
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-LOGIN_REDIRECT_URL = 'encrypt-home'
-LOGIN_URL = 'login'
 
 #rest framework authentication settings
 REST_FRAMEWORK = {
