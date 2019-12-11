@@ -43,9 +43,13 @@ Python 3
 import requests
 
 url = 'http://127.0.0.1:8000/string/'
+
 username = "testuser1"
+
 password = "testing321"
+
 r = requests.get(url, auth=(username, password))
+
 print(r.text)
 
 "{Random String: hfhasfjhfahfaha}"
@@ -53,6 +57,7 @@ print(r.text)
 -Encrypting and posting the same string (python requests example):
 
 import requests
+
 import bcrypt
 
 string = hfhasfjhfahfaha}
@@ -60,6 +65,9 @@ string = hfhasfjhfahfaha}
 hashed = bcrypt.hashpw(string.encode('utf8'), bcrypt.gensalt())
 
 headers = {'string': hashed}
+
 r = requests.post(url, data=headers, auth=(username, password)).json()
+
 if r["Response"] == "OK":
+
     print("The string was verified as properly encrypted!")
