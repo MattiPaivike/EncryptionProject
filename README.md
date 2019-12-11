@@ -38,7 +38,7 @@ Python 3
 # Manual testing notes
 -The application has 3 users. testuser1, testuser2 and superuser. The password for all users is: testing321
 
--Getting the string from the API (python requests example):
+# Getting the string from the API (python requests example):
 
 import requests
 
@@ -54,7 +54,8 @@ print(r.text)
 
 "{Random String: hfhasfjhfahfaha}"
 
--Encrypting and posting the same string (python requests example):
+
+# Encrypting and posting the same string (python requests example):
 
 import requests
 
