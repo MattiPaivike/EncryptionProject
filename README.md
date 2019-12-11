@@ -1,7 +1,7 @@
-# EncryptionProject
+# EncryptionProject:
 Verify that your strings have been encrypted correctly through django restframework.
 
-# Features
+# Features:
 -The requested strings are stored inside a sqlite database.
 
 -Only authenticated users can request new strings.
@@ -14,10 +14,10 @@ Verify that your strings have been encrypted correctly through django restframew
 
 -The original string in the database expires after 15 minutes.
 
-# Requirements
+# Requirements:
 Python 3
 
-# How to setup
+# How to setup:
 -Clone the repository to a local folder
 
 -Make a python virtual environment in to the same folder: ("python -m venv .")
@@ -28,15 +28,15 @@ Python 3
 
 -Run Django Dev server: (navigate to \encryption and run "python manage.py runserver")
 
-# Testing with "client" files
+# Testing with "client" files:
 - Once everything is up and running you can run "client.py". The client requests a new string from the server, encrypts it with bcrypt and verifies that the string has been encrypted correctly
 
 -testcase1.py tries to verify a string that does not exist in the database
 
 -testcase2.py tries to verify a string that exists in the database, but "belongs" to another user.
 
-# Manual testing notes
--The application has 3 users. testuser1, testuser2 and superuser. The password for all users is: testing321
+# Manual testing notes:
+-The application has 3 users built-in: testuser1, testuser2 and superuser. The password for all users is: testing321
 
 # Getting the string from the API (python requests example):
 
