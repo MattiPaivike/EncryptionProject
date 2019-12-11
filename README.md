@@ -61,7 +61,7 @@ import requests
 
 import bcrypt
 
-string = hfhasfjhfahfaha}
+string = "hfhasfjhfahfaha"
 
 hashed = bcrypt.hashpw(string.encode('utf8'), bcrypt.gensalt())
 
