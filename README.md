@@ -1,5 +1,5 @@
 # EncryptionProject:
-Verify that your strings have been encrypted correctly through django restframework.
+Request random strings and verify that they have been encrypted properly. The project was made with Python/Django/Django-RestFramework.
 
 # Features:
 -The requested strings are stored inside a sqlite database.
