@@ -70,5 +70,5 @@ headers = {'string': hashed}
 r = requests.post(url, data=headers, auth=(username, password)).json()
 
 if r["Response"] == "OK":
-
-    print("The string was verified as properly encrypted!")
+    
+   print("The string was verified as properly encrypted!")
